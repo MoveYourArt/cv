@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <form class="" action="index.html" method="post">
+    <h3>Other input types to try:</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td><input type="button" value="Click Me"></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button">Add to favorites</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Choose your monster's colors:</p>
+
+            <div>
+              <input type="color" name="head" value="#e66465">
+              <label for="head">Head</label>
+            </div>
+
+            <div>
+              <input type="color" name="body" value="#f6b73c">
+              <label for="body">Body</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td> <br>
+            <label for="start">Start date:</label>
+
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="1982-01-01" max="2100-12-31">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            <label for="meeting-time">Choose a time for your appointment:</label>
+
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2000-01-01T00:00" max="2100-12-31T00:00">
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            <label for="email">Enter your globex.com email:</label>
+
+            <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+            <input type="submit" name="">
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>&lt;That's how to print brackets&gt;</h3>
+
+
+    <table>
+      <tbody>
+        <tr>
+          <td><label for="avatar">Choose a profile picture:</label>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Sign in to your account:</p>
+
+            <div>
+              <label for="userId">User ID</label>
+              <input type="text" id="userId" name="userId">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="image" id="image" alt="Login" src="/media/examples/login-button.png">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><label for="start">Start month:</label>
+          </td>
+          </p>
+
+        </tr>
+        <tr>
+          <td><input type="month" id="start" name="start" min="2018-01" value="2018-05"></td>
+        </tr>
+        <tr>
+          <td> <br> <label for="years_left">Number of years left to live (1-100):</label></td>
+          <td> <br> <input type="number" id="years_left" name="years_left" min="1" max="100"></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <!-- REVIEW: The input types below are all below and out of the table -->
+    <p>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    </p>
+
+
+    <div>
+      <label for="pass">Password (8 characters minimum):</label>
+      <input type="password" id="pass" name="password" minlength="8" required>
+    </div>
+
+    <input type="submit" value="Sign in">
+
+    <p>
+    <p>Audio settings:</p>
+
+    <div>
+      <input type="range" id="volume" name="volume" min="0" max="20" value="3" step="1">
+      <label for="volume">Volume</label>
+    </div>
+    </p>
+
+    <p><label for="site-search">Search the site:</label>
+      <input type="search" id="site-search" name="q" aria-label="Search through site content">
+
+      <button>Search</button>
+    </p>
+
+
+
+    <p><label for="phone">Enter your phone number:</label>
+
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+      <small>Format: 123-456-7890</small>
+      <input type="submit">
+    </p>
+
+    <p><label for="url">Enter an https:// URL</label>
+
+      <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="40" required>
+
+    </p>
+    <p>
+      <label for="week">Choose a week in May or June:</label>
+
+      <input type="week" name="week" id="camp-week" min="2018-W18" max="2020-W53" required>
+    </p>
+    <input type="submit" value="Ab geht das komplette Formular! :-)">
+  </form>
+
+</body>
+
+</html>
